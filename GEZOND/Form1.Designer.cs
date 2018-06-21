@@ -110,7 +110,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(565, 366);
+            this.label1.Location = new System.Drawing.Point(565, 393);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 3;
@@ -119,7 +119,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(659, 360);
+            this.textBox1.Location = new System.Drawing.Point(659, 387);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(254, 26);
             this.textBox1.TabIndex = 4;
@@ -127,7 +127,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox2.Location = new System.Drawing.Point(659, 392);
+            this.textBox2.Location = new System.Drawing.Point(659, 419);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(254, 26);
             this.textBox2.TabIndex = 6;
@@ -136,7 +136,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(565, 398);
+            this.label2.Location = new System.Drawing.Point(565, 425);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 5;
@@ -145,7 +145,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox3.Location = new System.Drawing.Point(659, 423);
+            this.textBox3.Location = new System.Drawing.Point(659, 450);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(254, 26);
             this.textBox3.TabIndex = 8;
@@ -154,7 +154,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(565, 430);
+            this.label3.Location = new System.Drawing.Point(565, 457);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 7;
@@ -163,7 +163,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox4.Location = new System.Drawing.Point(659, 455);
+            this.textBox4.Location = new System.Drawing.Point(659, 482);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(254, 26);
             this.textBox4.TabIndex = 10;
@@ -172,7 +172,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(565, 462);
+            this.label4.Location = new System.Drawing.Point(565, 489);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 20);
             this.label4.TabIndex = 9;
@@ -201,15 +201,15 @@
             this.Klanten.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Klanten.Location = new System.Drawing.Point(12, 12);
             this.Klanten.Name = "Klanten";
-            this.Klanten.Size = new System.Drawing.Size(533, 243);
+            this.Klanten.Size = new System.Drawing.Size(533, 263);
             this.Klanten.TabIndex = 15;
             // 
             // Dokters
             // 
             this.Dokters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dokters.Location = new System.Drawing.Point(12, 268);
+            this.Dokters.Location = new System.Drawing.Point(12, 281);
             this.Dokters.Name = "Dokters";
-            this.Dokters.Size = new System.Drawing.Size(533, 318);
+            this.Dokters.Size = new System.Drawing.Size(533, 305);
             this.Dokters.TabIndex = 16;
             // 
             // button4
@@ -264,7 +264,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label9.Location = new System.Drawing.Point(721, 302);
+            this.label9.Location = new System.Drawing.Point(721, 329);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(135, 31);
             this.label9.TabIndex = 26;
@@ -274,7 +274,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.radioButton1.Location = new System.Drawing.Point(727, 336);
+            this.radioButton1.Location = new System.Drawing.Point(727, 363);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(63, 24);
             this.radioButton1.TabIndex = 27;
@@ -286,7 +286,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.radioButton2.Location = new System.Drawing.Point(796, 336);
+            this.radioButton2.Location = new System.Drawing.Point(796, 363);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(56, 24);
             this.radioButton2.TabIndex = 28;
@@ -329,6 +329,7 @@
             this.button5.TabIndex = 36;
             this.button5.Text = "Toevoegen";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // radioButton3
             // 
@@ -395,7 +396,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox6.Location = new System.Drawing.Point(1010, 513);
+            this.textBox6.Location = new System.Drawing.Point(1012, 514);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(252, 26);
             this.textBox6.TabIndex = 42;
@@ -404,7 +405,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(916, 519);
+            this.label6.Location = new System.Drawing.Point(918, 520);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 20);
             this.label6.TabIndex = 41;
@@ -414,7 +415,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label12.Location = new System.Drawing.Point(916, 487);
+            this.label12.Location = new System.Drawing.Point(918, 488);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(45, 20);
             this.label12.TabIndex = 43;
@@ -431,7 +432,7 @@
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox8.Location = new System.Drawing.Point(1010, 481);
+            this.textBox8.Location = new System.Drawing.Point(1012, 482);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(252, 26);
             this.textBox8.TabIndex = 46;
@@ -440,7 +441,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label15.Location = new System.Drawing.Point(1075, 447);
+            this.label15.Location = new System.Drawing.Point(1077, 448);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(130, 31);
             this.label15.TabIndex = 47;

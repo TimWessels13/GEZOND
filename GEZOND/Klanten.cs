@@ -14,7 +14,6 @@ namespace GEZOND
         public string Postcode { get; set; }
         public string Plaats { get; set; }
         public int ArtsId { get; set; }
-        public int MedicatieId { get; set; }
-        public int VerzekeraarId { get; set; }
+        public string Verzekeraar { get; set; }
     }
 }

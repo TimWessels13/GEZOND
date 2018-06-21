@@ -9,11 +9,11 @@ namespace GEZOND
     class Huisartsen
     {
         public int Id { get; set; }
-        public int KlantId { get; set; }
         public string Naam { get; set; }
         public string Adres { get; set; }
         public string Postcode { get; set; }
         public string Plaats { get; set; }
+        public int KlantId { get; set; }
         public string ContractTot { get; set; }
     }
 }
