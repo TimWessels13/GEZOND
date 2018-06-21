@@ -8,8 +8,8 @@ namespace GEZOND
 {
     class Medicatie
     {
-        public int MedicatieId { get; set; }
-        public string MedicatieNaam { get; set; }
+        public int Id { get; set; }
+        public string Naam { get; set; }
         public double Dosis { get; set; }
     }
 }

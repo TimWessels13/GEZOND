@@ -12,9 +12,24 @@ namespace GEZOND
 {
     public partial class Form1 : Form
     {
+        Database db = new Database();
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.Klanten.ToList();
+            dataGridView2.DataSource = db.Huisartsen.ToList();
+            dataGridView3.DataSource = db.Medicatie.ToList();
+        }
+
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

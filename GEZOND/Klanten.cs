@@ -8,11 +8,11 @@ namespace GEZOND
 {
     class Klanten
     {
-        public int KlantId { get; set; }
-        public string KlantNaam { get; set; }
-        public string KlantAdres { get; set; }
-        public string KlantPostcode { get; set; }
-        public string KlantPlaats { get; set; }
+        public int Id { get; set; }
+        public string Naam { get; set; }
+        public string Adres { get; set; }
+        public string Postcode { get; set; }
+        public string Plaats { get; set; }
         public int ArtsId { get; set; }
         public int MedicatieId { get; set; }
         public int VerzekeraarId { get; set; }

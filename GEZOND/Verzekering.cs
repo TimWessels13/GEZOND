@@ -8,7 +8,7 @@ namespace GEZOND
 {
     class Verzekering
     {
-        public int VerzekeraarId { get; set; }
-        public string VerzekeraarNaam { get; set; }
+        public int Id { get; set; }
+        public string Naam { get; set; }
     }
 }

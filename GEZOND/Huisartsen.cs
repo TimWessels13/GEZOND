@@ -8,11 +8,11 @@ namespace GEZOND
 {
     class Huisartsen
     {
-        public int ArtsID { get; set; }
-        public string ArtsNaam { get; set; }
-        public string ArtsAdres { get; set; }
-        public string ArtsPostcode { get; set; }
-        public string ArtsPlaats { get; set; }
+        public int Id { get; set; }
+        public string Naam { get; set; }
+        public string Adres { get; set; }
+        public string Postcode { get; set; }
+        public string Plaats { get; set; }
         public string ContractTot { get; set; }
     }
 }
