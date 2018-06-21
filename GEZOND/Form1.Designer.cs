@@ -39,10 +39,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Klanten = new System.Windows.Forms.DataGridView();
-            this.Dokters = new System.Windows.Forms.DataGridView();
+            this.Huisartsen = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -55,8 +54,6 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.Medicatie = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -65,14 +62,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.Maanden = new System.Windows.Forms.ComboBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.Artsen = new System.Windows.Forms.ComboBox();
+            this.Klant = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Klanten)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dokters)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Huisartsen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Medicatie)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,6 +83,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Verleng contract";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -95,6 +94,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Print labels";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -105,6 +105,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Wijzig gegevens";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -178,14 +179,6 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Plaats";
             // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox5.Location = new System.Drawing.Point(1015, 292);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(249, 26);
-            this.textBox5.TabIndex = 12;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -201,26 +194,29 @@
             this.Klanten.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Klanten.Location = new System.Drawing.Point(12, 12);
             this.Klanten.Name = "Klanten";
+            this.Klanten.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Klanten.Size = new System.Drawing.Size(533, 263);
             this.Klanten.TabIndex = 15;
             // 
-            // Dokters
+            // Huisartsen
             // 
-            this.Dokters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dokters.Location = new System.Drawing.Point(12, 281);
-            this.Dokters.Name = "Dokters";
-            this.Dokters.Size = new System.Drawing.Size(533, 305);
-            this.Dokters.TabIndex = 16;
+            this.Huisartsen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Huisartsen.Location = new System.Drawing.Point(12, 281);
+            this.Huisartsen.Name = "Huisartsen";
+            this.Huisartsen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Huisartsen.Size = new System.Drawing.Size(533, 305);
+            this.Huisartsen.TabIndex = 16;
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button4.Location = new System.Drawing.Point(608, 106);
+            this.button4.Location = new System.Drawing.Point(615, 77);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 33);
             this.button4.TabIndex = 17;
             this.button4.Text = "Zoeken";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label7
             // 
@@ -235,9 +231,9 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox7.Location = new System.Drawing.Point(1015, 324);
+            this.textBox7.Location = new System.Drawing.Point(1010, 324);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(249, 26);
+            this.textBox7.Size = new System.Drawing.Size(254, 26);
             this.textBox7.TabIndex = 20;
             // 
             // label8
@@ -254,11 +250,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label10.Location = new System.Drawing.Point(1009, 353);
+            this.label10.Location = new System.Drawing.Point(1038, 353);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(242, 31);
+            this.label10.Size = new System.Drawing.Size(206, 31);
             this.label10.TabIndex = 25;
-            this.label10.Text = "Arts contract vanaf";
+            this.label10.Text = "Arts contract tot";
             // 
             // label9
             // 
@@ -305,7 +301,7 @@
             // textBox11
             // 
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox11.Location = new System.Drawing.Point(608, 74);
+            this.textBox11.Location = new System.Drawing.Point(615, 45);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(112, 26);
             this.textBox11.TabIndex = 34;
@@ -314,7 +310,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label14.Location = new System.Drawing.Point(551, 77);
+            this.label14.Location = new System.Drawing.Point(558, 48);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(51, 20);
             this.label14.TabIndex = 33;
@@ -331,35 +327,12 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.radioButton3.Location = new System.Drawing.Point(655, 44);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(56, 24);
-            this.radioButton3.TabIndex = 38;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Arts";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.radioButton4.Location = new System.Drawing.Point(586, 43);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(63, 24);
-            this.radioButton4.TabIndex = 37;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Klant";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
             // Medicatie
             // 
             this.Medicatie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Medicatie.Location = new System.Drawing.Point(745, 12);
             this.Medicatie.Name = "Medicatie";
+            this.Medicatie.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Medicatie.Size = new System.Drawing.Size(525, 243);
             this.Medicatie.TabIndex = 39;
             // 
@@ -392,6 +365,7 @@
             this.button6.TabIndex = 40;
             this.button6.Text = "Medicatie toevoegen";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // textBox6
             // 
@@ -429,14 +403,6 @@
             this.Maanden.Size = new System.Drawing.Size(254, 21);
             this.Maanden.TabIndex = 45;
             // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox8.Location = new System.Drawing.Point(1012, 482);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(252, 26);
-            this.textBox8.TabIndex = 46;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -466,6 +432,7 @@
             this.button7.TabIndex = 49;
             this.button7.Text = "Verwijder huisarts";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -476,6 +443,7 @@
             this.button8.TabIndex = 50;
             this.button8.Text = "Verwijder medicijn";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -486,26 +454,42 @@
             this.button9.TabIndex = 51;
             this.button9.Text = "Verwijder klant";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // Artsen
+            // 
+            this.Artsen.FormattingEnabled = true;
+            this.Artsen.Location = new System.Drawing.Point(1010, 295);
+            this.Artsen.Name = "Artsen";
+            this.Artsen.Size = new System.Drawing.Size(254, 21);
+            this.Artsen.TabIndex = 52;
+            // 
+            // Klant
+            // 
+            this.Klant.FormattingEnabled = true;
+            this.Klant.Location = new System.Drawing.Point(1010, 487);
+            this.Klant.Name = "Klant";
+            this.Klant.Size = new System.Drawing.Size(254, 21);
+            this.Klant.TabIndex = 53;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 598);
+            this.Controls.Add(this.Klant);
+            this.Controls.Add(this.Artsen);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox8);
             this.Controls.Add(this.Maanden);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.Medicatie);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.label14);
@@ -520,9 +504,8 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.Dokters);
+            this.Controls.Add(this.Huisartsen);
             this.Controls.Add(this.Klanten);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label4);
@@ -536,10 +519,10 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "v                textBox3.Text = \"\";";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.Klanten)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dokters)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Huisartsen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Medicatie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -559,10 +542,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView Klanten;
-        private System.Windows.Forms.DataGridView Dokters;
+        private System.Windows.Forms.DataGridView Huisartsen;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox7;
@@ -575,8 +557,6 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.DataGridView Medicatie;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
@@ -585,12 +565,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox Maanden;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.ComboBox Artsen;
+        private System.Windows.Forms.ComboBox Klant;
     }
 }
 

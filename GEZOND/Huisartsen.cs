@@ -13,7 +13,7 @@ namespace GEZOND
         public string Adres { get; set; }
         public string Postcode { get; set; }
         public string Plaats { get; set; }
-        public int KlantId { get; set; }
-        public string ContractTot { get; set; }
+        public string Maand { get; set; }
+        public int Jaar { get; set; }
     }
 }

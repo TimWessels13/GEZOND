@@ -13,7 +13,7 @@ namespace GEZOND
         public string Adres { get; set; }
         public string Postcode { get; set; }
         public string Plaats { get; set; }
-        public int ArtsId { get; set; }
+        public string Arts { get; set; }
         public string Verzekeraar { get; set; }
     }
 }
