@@ -9,7 +9,7 @@ namespace GEZOND
     class Medicatie
     {
         public int Id { get; set; }
+        public int KlantId { get; set; }
         public string Naam { get; set; }
-        public double Dosis { get; set; }
     }
 }

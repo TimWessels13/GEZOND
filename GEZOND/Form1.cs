@@ -17,17 +17,29 @@ namespace GEZOND
         public Form1()
         {
             InitializeComponent();
+
+            Maanden.Items.Add("Januari");
+            Maanden.Items.Add("Februari");
+            Maanden.Items.Add("Maart");
+            Maanden.Items.Add("April");
+            Maanden.Items.Add("Mei");
+            Maanden.Items.Add("Juni");
+            Maanden.Items.Add("Juli");
+            Maanden.Items.Add("Augustus");
+            Maanden.Items.Add("September");
+            Maanden.Items.Add("Oktober");
+            Maanden.Items.Add("November");
+            Maanden.Items.Add("December");
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = db.Klanten.ToList();
-            dataGridView2.DataSource = db.Huisartsen.ToList();
-            dataGridView3.DataSource = db.Medicatie.ToList();
+            Klanten.DataSource = db.Klanten.ToList();
+            Dokters.DataSource = db.Huisartsen.ToList();
+            Medicatie.DataSource = db.Medicatie.ToList();
         }
 
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Form1_Load_1(object sender, EventArgs e)
         {
 
         }
