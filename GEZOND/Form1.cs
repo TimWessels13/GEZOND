@@ -18,6 +18,7 @@ namespace GEZOND
         {
             InitializeComponent();
 
+            // dropdown bij de klant voor de doktoren
             /*Huisartsen moeten in de dropdown komen.
             foreach ()
             {
@@ -25,6 +26,7 @@ namespace GEZOND
             }
             */
 
+            // dropdown bij de medicatie voor de klanten
             /*Klanten moeten in de dropdown komen.
             foreach ()
             {
@@ -32,6 +34,7 @@ namespace GEZOND
             }
             */
 
+            // dropdown bij de dokter voor de maanden
             Maanden.Items.Add("Januari");
             Maanden.Items.Add("Februari");
             Maanden.Items.Add("Maart");
@@ -113,7 +116,7 @@ namespace GEZOND
             }
         }
 
-        // Er moet gezocht kunne worden
+        // Er moet gezocht kunnen worden
         private void button4_Click(object sender, EventArgs e)
         {
 

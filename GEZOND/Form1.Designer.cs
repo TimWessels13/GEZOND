@@ -399,10 +399,11 @@
             // 
             // Maanden
             // 
+            this.Maanden.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Maanden.FormattingEnabled = true;
-            this.Maanden.Location = new System.Drawing.Point(1010, 392);
+            this.Maanden.Location = new System.Drawing.Point(1010, 385);
             this.Maanden.Name = "Maanden";
-            this.Maanden.Size = new System.Drawing.Size(254, 21);
+            this.Maanden.Size = new System.Drawing.Size(254, 28);
             this.Maanden.TabIndex = 45;
             // 
             // label15
@@ -460,18 +461,20 @@
             // 
             // Artsen
             // 
+            this.Artsen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Artsen.FormattingEnabled = true;
-            this.Artsen.Location = new System.Drawing.Point(1010, 295);
+            this.Artsen.Location = new System.Drawing.Point(1010, 290);
             this.Artsen.Name = "Artsen";
-            this.Artsen.Size = new System.Drawing.Size(254, 21);
+            this.Artsen.Size = new System.Drawing.Size(254, 28);
             this.Artsen.TabIndex = 52;
             // 
             // Klant
             // 
+            this.Klant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Klant.FormattingEnabled = true;
-            this.Klant.Location = new System.Drawing.Point(1010, 487);
+            this.Klant.Location = new System.Drawing.Point(1012, 480);
             this.Klant.Name = "Klant";
-            this.Klant.Size = new System.Drawing.Size(254, 21);
+            this.Klant.Size = new System.Drawing.Size(254, 28);
             this.Klant.TabIndex = 53;
             // 
             // Form1
