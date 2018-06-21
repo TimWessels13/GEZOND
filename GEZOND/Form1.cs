@@ -64,7 +64,7 @@ namespace GEZOND
 
         }
 
-        // Gegevens van klant of huisarts moeten aangepast worden (code klopt niet helemaal)
+        // Gegevens van klant of huisarts moeten aangepast worden (code klopt niet helemaal voor deze actie)
         private void button3_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
@@ -198,6 +198,18 @@ namespace GEZOND
 
         // Klant moet verwijderd worden uit de db
         private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // De huisarts van de gekozen klant moet verschijnen en de medicatie van de klant
+        private void Klanten_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        // De klanten van de gekonzen arts moeten verschijnen
+        private void Huisartsen_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -197,6 +197,7 @@
             this.Klanten.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Klanten.Size = new System.Drawing.Size(533, 263);
             this.Klanten.TabIndex = 15;
+            this.Klanten.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Klanten_CellContentClick);
             // 
             // Huisartsen
             // 
@@ -206,6 +207,7 @@
             this.Huisartsen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Huisartsen.Size = new System.Drawing.Size(533, 305);
             this.Huisartsen.TabIndex = 16;
+            this.Huisartsen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Huisartsen_CellContentClick);
             // 
             // button4
             // 
