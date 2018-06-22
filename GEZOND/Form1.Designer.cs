@@ -192,10 +192,10 @@
             // Klanten
             // 
             this.Klanten.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Klanten.Location = new System.Drawing.Point(12, 12);
+            this.Klanten.Location = new System.Drawing.Point(12, 13);
             this.Klanten.Name = "Klanten";
             this.Klanten.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Klanten.Size = new System.Drawing.Size(533, 263);
+            this.Klanten.Size = new System.Drawing.Size(641, 263);
             this.Klanten.TabIndex = 15;
             this.Klanten.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Klanten_CellContentClick);
             // 
@@ -212,7 +212,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button4.Location = new System.Drawing.Point(615, 77);
+            this.button4.Location = new System.Drawing.Point(739, 75);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 33);
             this.button4.TabIndex = 17;
@@ -303,7 +303,7 @@
             // textBox11
             // 
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox11.Location = new System.Drawing.Point(615, 45);
+            this.textBox11.Location = new System.Drawing.Point(739, 43);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(112, 26);
             this.textBox11.TabIndex = 34;
@@ -312,7 +312,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label14.Location = new System.Drawing.Point(558, 48);
+            this.label14.Location = new System.Drawing.Point(682, 46);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(51, 20);
             this.label14.TabIndex = 33;
@@ -332,10 +332,10 @@
             // Medicatie
             // 
             this.Medicatie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Medicatie.Location = new System.Drawing.Point(745, 12);
+            this.Medicatie.Location = new System.Drawing.Point(917, 12);
             this.Medicatie.Name = "Medicatie";
             this.Medicatie.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Medicatie.Size = new System.Drawing.Size(525, 243);
+            this.Medicatie.Size = new System.Drawing.Size(353, 243);
             this.Medicatie.TabIndex = 39;
             // 
             // label13
@@ -420,7 +420,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label16.Location = new System.Drawing.Point(597, 11);
+            this.label16.Location = new System.Drawing.Point(721, 9);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(105, 31);
             this.label16.TabIndex = 48;
@@ -429,7 +429,7 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button7.Location = new System.Drawing.Point(603, 213);
+            this.button7.Location = new System.Drawing.Point(727, 211);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(88, 62);
             this.button7.TabIndex = 49;
@@ -440,7 +440,7 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button8.Location = new System.Drawing.Point(649, 145);
+            this.button8.Location = new System.Drawing.Point(773, 143);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(88, 62);
             this.button8.TabIndex = 50;
@@ -451,7 +451,7 @@
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button9.Location = new System.Drawing.Point(555, 145);
+            this.button9.Location = new System.Drawing.Point(679, 143);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(88, 62);
             this.button9.TabIndex = 51;

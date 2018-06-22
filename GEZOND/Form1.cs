@@ -122,6 +122,7 @@ namespace GEZOND
 
         }
 
+        // huisarts of klant toevoegen
         private void button5_Click(object sender, EventArgs e)
         {
             Database db = new Database();
@@ -173,6 +174,7 @@ namespace GEZOND
 
         }
 
+        // medicatie toevoegen
         private void button6_Click(object sender, EventArgs e)
         {
             Medicatie m = new Medicatie();
