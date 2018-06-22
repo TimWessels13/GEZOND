@@ -55,7 +55,7 @@ namespace GEZOND
         // Huisarts contract met een jaar verlengen
         private void button1_Click(object sender, EventArgs e)
         {
-            Huisartsen h = new Huisartsen();
+            Huisartsen h = (Huisartsen)Huisartsen.CurrentRow.DataBoundItem;
             h.Jaar++;
 
             db.SaveChanges();
