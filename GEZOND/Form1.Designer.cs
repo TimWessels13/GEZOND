@@ -76,9 +76,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(1111, 546);
+            this.button1.Location = new System.Drawing.Point(1026, 546);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 51);
+            this.button1.Size = new System.Drawing.Size(118, 51);
             this.button1.TabIndex = 0;
             this.button1.Text = "Verleng contract";
             this.button1.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.Location = new System.Drawing.Point(551, 544);
+            this.button2.Location = new System.Drawing.Point(581, 546);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(102, 51);
             this.button2.TabIndex = 1;
@@ -295,6 +295,7 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(112, 26);
             this.textBox11.TabIndex = 34;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // label14
             // 
@@ -309,7 +310,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button5.Location = new System.Drawing.Point(659, 544);
+            this.button5.Location = new System.Drawing.Point(709, 546);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(142, 51);
             this.button5.TabIndex = 36;
@@ -349,7 +350,7 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button6.Location = new System.Drawing.Point(955, 544);
+            this.button6.Location = new System.Drawing.Point(867, 546);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(142, 51);
             this.button6.TabIndex = 40;
