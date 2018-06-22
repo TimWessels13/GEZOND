@@ -67,55 +67,6 @@ namespace GEZOND
 
         }
 
-        // Gegevens van klant of huisarts aanpassen (code klopt niet helemaal voor deze actie)
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (radioButton1.Checked)
-            {
-
-                Klanten k = new Klanten();
-                k.Naam = textBox1.Text;
-                k.Adres = textBox2.Text;
-                k.Postcode = textBox3.Text;
-                k.Plaats = textBox4.Text;
-                k.Arts = Artsen.Text;
-                k.Verzekeraar = textBox7.Text;
-
-                db.Klanten.Add(k);
-                db.SaveChanges();
-                Klanten.DataSource = db.Klanten.ToList();
-
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox3.Text = "";
-                textBox4.Text = "";
-                Artsen.Text = "";
-                textBox7.Text = "";
-            }
-
-            else if (radioButton2.Checked)
-            {
-                Huisartsen h = new Huisartsen();
-                h.Naam = textBox1.Text;
-                h.Adres = textBox2.Text;
-                h.Postcode = textBox3.Text;
-                h.Plaats = textBox4.Text;
-                h.Maand = Maanden.Text;
-                h.Jaar = Convert.ToInt32(textBox9.Text);
-
-                db.Huisartsen.Add(h);
-                db.SaveChanges();
-                Huisartsen.DataSource = db.Huisartsen.ToList();
-
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox3.Text = "";
-                textBox4.Text = "";
-                Maanden.Text = "";
-                textBox9.Text = "";
-            }
-        }
-
         // zoeken
         private void button4_Click(object sender, EventArgs e)
         {
@@ -187,24 +138,6 @@ namespace GEZOND
 
             Klant.Text = "";
             textBox6.Text = "";
-        }
-
-        // Huisarts verwijderen
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        // Medicijn verwijderen
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        // Klant verwijderen
-        private void button9_Click(object sender, EventArgs e)
-        {
-
         }
 
         // De huisarts en medicatie van de gekozen klant laten zien
