@@ -76,8 +76,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(551, 544);
-            this.button1.Location = new System.Drawing.Point(1026, 546);
+            this.button1.Location = new System.Drawing.Point(1152, 544);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 51);
             this.button1.TabIndex = 0;
@@ -296,7 +295,6 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(112, 26);
             this.textBox11.TabIndex = 34;
-            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // label14
             // 
@@ -351,7 +349,7 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button6.Location = new System.Drawing.Point(955, 544);
+            this.button6.Location = new System.Drawing.Point(1004, 544);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(142, 51);
             this.button6.TabIndex = 40;
