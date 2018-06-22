@@ -172,18 +172,21 @@ namespace GEZOND
         // klant verwijderen
         private void button8_Click(object sender, EventArgs e)
         {
-
+            Klanten k = (Klanten)Klanten.CurrentRow.DataBoundItem;
+            
         }
 
         // medicatie verwijderen
         private void button7_Click(object sender, EventArgs e)
         {
+            Medicatie m = (Medicatie)Medicatie.CurrentRow.DataBoundItem;
 
         }
 
         // arts verwijderen
         private void button3_Click(object sender, EventArgs e)
         {
+            Huisartsen h = (Huisartsen)Huisartsen.CurrentRow.DataBoundItem;
 
         }
     }
