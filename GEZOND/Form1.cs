@@ -72,7 +72,7 @@ namespace GEZOND
         // zoeken
         private void button4_Click(object sender, EventArgs e)
         {
-
+            string Zoek = textBox11.Text;
         }
 
         // huisarts of klant toevoegen
