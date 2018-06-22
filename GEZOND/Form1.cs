@@ -56,18 +56,18 @@ namespace GEZOND
             Medicatie.DataSource = db.Medicatie.ToList();
         }
 
-        // Huisarts contract moet met een jaar omhoog
+        // Huisarts contract met een jaar verlengen
         private void button1_Click(object sender, EventArgs e)
         {
         }
 
-        // Er moeten stickerlabels geprint kunnen worden
+        // stickerlabels printen
         private void button2_Click(object sender, EventArgs e)
         {
 
         }
 
-        // Gegevens van klant of huisarts moeten aangepast worden (code klopt niet helemaal voor deze actie)
+        // Gegevens van klant of huisarts aanpassen (code klopt niet helemaal voor deze actie)
         private void button3_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
@@ -116,7 +116,7 @@ namespace GEZOND
             }
         }
 
-        // Er moet gezocht kunnen worden
+        // zoeken
         private void button4_Click(object sender, EventArgs e)
         {
 
@@ -189,31 +189,31 @@ namespace GEZOND
             textBox6.Text = "";
         }
 
-        // Huisarts moet verwijderd worden uit de db
+        // Huisarts verwijderen
         private void button7_Click(object sender, EventArgs e)
         {
 
         }
 
-        // Medicijn moet verwijderd worden uit de db
+        // Medicijn verwijderen
         private void button8_Click(object sender, EventArgs e)
         {
 
         }
 
-        // Klant moet verwijderd worden uit de db
+        // Klant verwijderen
         private void button9_Click(object sender, EventArgs e)
         {
 
         }
 
-        // De huisarts van de gekozen klant moet verschijnen en de medicatie van de klant
+        // De huisarts en medicatie van de gekozen klant laten zien
         private void Klanten_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        // De klanten van de gekonzen arts moeten verschijnen
+        // De klanten van de gekozen arts laten zien
         private void Huisartsen_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
