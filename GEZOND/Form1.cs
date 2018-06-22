@@ -19,20 +19,16 @@ namespace GEZOND
             InitializeComponent();
 
             // dropdown bij de klant voor de doktoren
-            /*Huisartsen moeten in de dropdown komen.
-            foreach ()
+            foreach (Huisartsen item in db.Huisartsen)
             {
-               Artsen.Items.Add();
+               Artsen.Items.Add(item.Naam);
             }
-            */
 
             // dropdown bij de medicatie voor de klanten
-            /*Klanten moeten in de dropdown komen.
-            foreach ()
+            foreach (Klanten item in db.Klanten)
             {
-                Klant.Items.Add();
+                Klant.Items.Add(item.Naam);
             }
-            */
 
             // dropdown bij de dokter voor de maanden
             Maanden.Items.Add("Januari");
@@ -59,6 +55,12 @@ namespace GEZOND
         // Huisarts contract met een jaar verlengen
         private void button1_Click(object sender, EventArgs e)
         {
+            Huisartsen h = new Huisartsen();
+            h.Jaar++;
+
+            db.SaveChanges();
+            Huisartsen.DataSource = db.Huisartsen.ToList();
+
         }
 
         // stickerlabels printen
@@ -80,47 +82,62 @@ namespace GEZOND
 
             if (radioButton1.Checked)
             {
+                if (textBox1 != null && textBox2 != null && textBox3 != null && textBox4 != null && Artsen != null && textBox7 != null)
+                {
+                    string naam = textBox1.Text;
+                    Klanten k = new Klanten();
+                    k.Naam = naam;
+                    k.Adres = textBox2.Text;
+                    k.Postcode = textBox3.Text;
+                    k.Plaats = textBox4.Text;
+                    k.Arts = Artsen.Text;
+                    k.Verzekeraar = textBox7.Text;
 
-                Klanten k = new Klanten();
-                k.Naam = textBox1.Text;
-                k.Adres = textBox2.Text;
-                k.Postcode = textBox3.Text;
-                k.Plaats = textBox4.Text;
-                k.Arts = Artsen.Text;
-                k.Verzekeraar = textBox7.Text;
+                    db.Klanten.Add(k);
+                    db.SaveChanges();
+                    Klanten.DataSource = db.Klanten.ToList();
 
-                db.Klanten.Add(k);
-                db.SaveChanges();
-                Klanten.DataSource = db.Klanten.ToList();
-
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox3.Text = "";
-                textBox4.Text = "";
-                Artsen.Text = "";
-                textBox7.Text = "";
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                    Artsen.Text = "";
+                    textBox7.Text = "";
+                    Klant.Items.Add(naam);
+                }
+                else
+                {
+                }
             }
 
             else if (radioButton2.Checked)
             {
-                Huisartsen h = new Huisartsen();
-                h.Naam = textBox1.Text;
-                h.Adres = textBox2.Text;
-                h.Postcode = textBox3.Text;
-                h.Plaats = textBox4.Text;
-                h.Maand = Maanden.Text;
-                h.Jaar = Convert.ToInt32(textBox9.Text);
+                if (textBox1 != null && textBox2 != null && textBox3 != null && textBox4 != null && Maanden != null && textBox9 != null)
+                {
+                    string naam = textBox1.Text;
+                    Huisartsen h = new Huisartsen();
+                    h.Naam = naam;
+                    h.Adres = textBox2.Text;
+                    h.Postcode = textBox3.Text;
+                    h.Plaats = textBox4.Text;
+                    h.Maand = Maanden.Text;
+                    h.Jaar = Convert.ToInt32(textBox9.Text);
 
-                db.Huisartsen.Add(h);
-                db.SaveChanges();
-                Huisartsen.DataSource = db.Huisartsen.ToList();
+                    db.Huisartsen.Add(h);
+                    db.SaveChanges();
+                    Huisartsen.DataSource = db.Huisartsen.ToList();
 
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox3.Text = "";
-                textBox4.Text = "";
-                Maanden.Text = "";
-                textBox9.Text = "";
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    textBox4.Text = "";
+                    Maanden.Text = "";
+                    textBox9.Text = "";
+                    Artsen.Items.Add(naam);
+                }
+                else
+                {
+                }
             }
 
         }
@@ -148,6 +165,24 @@ namespace GEZOND
 
         // De klanten van de gekozen arts laten zien
         private void Huisartsen_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        // klant verwijderen
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // medicatie verwijderen
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // arts verwijderen
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

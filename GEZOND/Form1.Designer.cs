@@ -65,6 +65,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.Artsen = new System.Windows.Forms.ComboBox();
             this.Klant = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Klanten)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Huisartsen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Medicatie)).BeginInit();
@@ -73,7 +76,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(1103, 544);
+            this.button1.Location = new System.Drawing.Point(1111, 546);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 51);
             this.button1.TabIndex = 0;
@@ -197,7 +200,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button4.Location = new System.Drawing.Point(739, 75);
+            this.button4.Location = new System.Drawing.Point(751, 75);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 33);
             this.button4.TabIndex = 17;
@@ -218,7 +221,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox7.Location = new System.Drawing.Point(1010, 324);
+            this.textBox7.Location = new System.Drawing.Point(1016, 324);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(254, 26);
             this.textBox7.TabIndex = 20;
@@ -280,7 +283,7 @@
             // textBox9
             // 
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox9.Location = new System.Drawing.Point(1010, 419);
+            this.textBox9.Location = new System.Drawing.Point(1016, 419);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(254, 26);
             this.textBox9.TabIndex = 32;
@@ -357,7 +360,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox6.Location = new System.Drawing.Point(1012, 514);
+            this.textBox6.Location = new System.Drawing.Point(1016, 514);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(252, 26);
             this.textBox6.TabIndex = 42;
@@ -386,7 +389,7 @@
             // 
             this.Maanden.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Maanden.FormattingEnabled = true;
-            this.Maanden.Location = new System.Drawing.Point(1010, 385);
+            this.Maanden.Location = new System.Drawing.Point(1016, 385);
             this.Maanden.Name = "Maanden";
             this.Maanden.Size = new System.Drawing.Size(254, 28);
             this.Maanden.TabIndex = 45;
@@ -415,7 +418,7 @@
             // 
             this.Artsen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Artsen.FormattingEnabled = true;
-            this.Artsen.Location = new System.Drawing.Point(1010, 290);
+            this.Artsen.Location = new System.Drawing.Point(1016, 290);
             this.Artsen.Name = "Artsen";
             this.Artsen.Size = new System.Drawing.Size(254, 28);
             this.Artsen.TabIndex = 52;
@@ -424,16 +427,52 @@
             // 
             this.Klant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Klant.FormattingEnabled = true;
-            this.Klant.Location = new System.Drawing.Point(1012, 480);
+            this.Klant.Location = new System.Drawing.Point(1016, 480);
             this.Klant.Name = "Klant";
             this.Klant.Size = new System.Drawing.Size(254, 28);
             this.Klant.TabIndex = 53;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button3.Location = new System.Drawing.Point(726, 171);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 51);
+            this.button3.TabIndex = 54;
+            this.button3.Text = "Arts verwijderen";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button7.Location = new System.Drawing.Point(811, 114);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(100, 51);
+            this.button7.TabIndex = 55;
+            this.button7.Text = "Medicatie verwijderen";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button8.Location = new System.Drawing.Point(659, 114);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(100, 51);
+            this.button8.TabIndex = 56;
+            this.button8.Text = "Klant verwijderen";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 598);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.Klant);
             this.Controls.Add(this.Artsen);
             this.Controls.Add(this.label16);
@@ -472,7 +511,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "v                textBox3.Text = \"\";";
+            this.Text = "Gezondheidsproject";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.Klanten)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Huisartsen)).EndInit();
@@ -521,6 +560,9 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox Artsen;
         private System.Windows.Forms.ComboBox Klant;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 
