@@ -172,22 +172,52 @@ namespace GEZOND
         // klant verwijderen
         private void button8_Click(object sender, EventArgs e)
         {
-            Klanten k = (Klanten)Klanten.CurrentRow.DataBoundItem;
-            
+            if (Klanten.SelectedRows.Count == 1)
+            {
+                Klanten k = (Klanten)Klanten.CurrentRow.DataBoundItem;
+                var itemToRemove = db.Klanten.SingleOrDefault(x => x.Id == k.Id);
+
+                if (itemToRemove != null)
+                {
+                    db.Klanten.Remove(itemToRemove);
+                    db.SaveChanges();
+                    Klanten.DataSource = db.Klanten.ToList();
+                }
+            }
         }
 
         // medicatie verwijderen
         private void button7_Click(object sender, EventArgs e)
         {
-            Medicatie m = (Medicatie)Medicatie.CurrentRow.DataBoundItem;
+            if (Medicatie.SelectedRows.Count == 1)
+            {
+                Medicatie m = (Medicatie)Medicatie.CurrentRow.DataBoundItem;
+                var itemToRemove = db.Medicatie.SingleOrDefault(x => x.Id == m.Id);
 
+                if (itemToRemove != null)
+                {
+                    db.Medicatie.Remove(itemToRemove);
+                    db.SaveChanges();
+                    Medicatie.DataSource = db.Medicatie.ToList();
+                }
+            }
         }
 
         // arts verwijderen
         private void button3_Click(object sender, EventArgs e)
         {
-            Huisartsen h = (Huisartsen)Huisartsen.CurrentRow.DataBoundItem;
+            if (Huisartsen.SelectedRows.Count == 1)
+            {
+                Huisartsen h = (Huisartsen)Huisartsen.CurrentRow.DataBoundItem;
+                var itemToRemove = db.Huisartsen.SingleOrDefault(x => x.Id == h.Id);
 
+                if (itemToRemove != null)
+                {
+                    db.Huisartsen.Remove(itemToRemove);
+                    db.SaveChanges();
+                    Huisartsen.DataSource = db.Huisartsen.ToList();
+                }
+            }
         }
 
         // alle gegevens tonens
