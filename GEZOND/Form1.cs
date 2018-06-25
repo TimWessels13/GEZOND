@@ -189,5 +189,11 @@ namespace GEZOND
             Huisartsen h = (Huisartsen)Huisartsen.CurrentRow.DataBoundItem;
 
         }
+
+        // alle gegevens tonens
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
