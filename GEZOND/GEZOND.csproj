@@ -67,6 +67,18 @@
     <Compile Include="Migrations\201806211339132_migration 1.Designer.cs">
       <DependentUpon>201806211339132_migration 1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806271139276_pizza.cs" />
+    <Compile Include="Migrations\201806271139276_pizza.Designer.cs">
+      <DependentUpon>201806271139276_pizza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806271149267_optie.cs" />
+    <Compile Include="Migrations\201806271149267_optie.Designer.cs">
+      <DependentUpon>201806271149267_optie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806271203383_hello.cs" />
+    <Compile Include="Migrations\201806271203383_hello.Designer.cs">
+      <DependentUpon>201806271203383_hello.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +87,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806211339132_migration 1.resx">
       <DependentUpon>201806211339132_migration 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806271139276_pizza.resx">
+      <DependentUpon>201806271139276_pizza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806271149267_optie.resx">
+      <DependentUpon>201806271149267_optie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806271203383_hello.resx">
+      <DependentUpon>201806271203383_hello.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

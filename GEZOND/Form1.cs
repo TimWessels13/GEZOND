@@ -89,7 +89,15 @@ namespace GEZOND
                     k.Adres = textBox2.Text;
                     k.Postcode = textBox3.Text;
                     k.Plaats = textBox4.Text;
-                    k.Arts = Artsen.Text;
+                    int Dokter = 0;
+                    foreach (Huisartsen item in db.Huisartsen)
+                    {
+                        if (Artsen.Text == item.Naam)
+                        {
+                            Dokter = item.Id;
+                        }
+                    }
+                    k.ArtsId = Dokter;
                     k.Verzekeraar = textBox7.Text;
 
                     db.Klanten.Add(k);
@@ -145,7 +153,15 @@ namespace GEZOND
         private void button6_Click(object sender, EventArgs e)
         {
             Medicatie m = new Medicatie();
-            m.KlantId = Convert.ToInt32(Klant.Text);
+            int Patient = 0;
+            foreach (Klanten item in db.Klanten)
+            {
+                if (Klant.Text == item.Naam)
+                {
+                    Patient = item.Id;
+                }
+            }
+            m.KlantId = Patient;
             m.Naam = textBox6.Text;
 
             db.Medicatie.Add(m);
@@ -162,6 +178,7 @@ namespace GEZOND
             if (Klanten.SelectedRows.Count == 1)
             {
                 Klanten k = (Klanten)Klanten.CurrentRow.DataBoundItem;
+                Huisartsen.DataSource = db.Huisartsen.Where(x => x.Id == k.Id);
             }
         }
 
@@ -171,6 +188,7 @@ namespace GEZOND
             if (Huisartsen.SelectedRows.Count == 1)
             {
                 Huisartsen h = (Huisartsen)Huisartsen.CurrentRow.DataBoundItem;
+                var itemsToShow = db.Huisartsen.SingleOrDefault(x => x.Id == h.Id);
             }
         }
 
