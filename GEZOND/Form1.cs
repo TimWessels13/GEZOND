@@ -178,7 +178,6 @@ namespace GEZOND
             if (Klanten.SelectedRows.Count == 1)
             {
                 Klanten k = (Klanten)Klanten.CurrentRow.DataBoundItem;
-                Huisartsen.DataSource = db.Huisartsen.Where(x => x.Id == k.Id);
             }
         }
 
@@ -188,7 +187,6 @@ namespace GEZOND
             if (Huisartsen.SelectedRows.Count == 1)
             {
                 Huisartsen h = (Huisartsen)Huisartsen.CurrentRow.DataBoundItem;
-                var itemsToShow = db.Huisartsen.SingleOrDefault(x => x.Id == h.Id);
             }
         }
 
