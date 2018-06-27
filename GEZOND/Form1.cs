@@ -60,7 +60,6 @@ namespace GEZOND
 
             db.SaveChanges();
             Huisartsen.DataSource = db.Huisartsen.ToList();
-
         }
 
         // stickerlabels printen
@@ -160,13 +159,19 @@ namespace GEZOND
         // De huisarts en medicatie van de gekozen klant laten zien
         private void Klanten_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (Klanten.SelectedRows.Count == 1)
+            {
+                Klanten k = (Klanten)Klanten.CurrentRow.DataBoundItem;
+            }
         }
 
         // De klanten van de gekozen arts laten zien
         private void Huisartsen_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (Huisartsen.SelectedRows.Count == 1)
+            {
+                Huisartsen h = (Huisartsen)Huisartsen.CurrentRow.DataBoundItem;
+            }
         }
 
         // klant verwijderen
@@ -223,7 +228,9 @@ namespace GEZOND
         // alle gegevens tonens
         private void button9_Click(object sender, EventArgs e)
         {
-
+            Klanten.DataSource = db.Klanten.ToList();
+            Huisartsen.DataSource = db.Huisartsen.ToList();
+            Medicatie.DataSource = db.Medicatie.ToList();
         }
     }
 }
