@@ -92,7 +92,6 @@ namespace GEZOND
                 y += 20f;
                 drawPoint = new PointF(x, y);
             }
-
         }
 
         // zoeken
