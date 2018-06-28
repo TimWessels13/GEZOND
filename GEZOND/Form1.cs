@@ -71,7 +71,7 @@ namespace GEZOND
         // zoeken
         private void button4_Click(object sender, EventArgs e)
         {
-            string Zoek = textBox11.Text;
+            Klanten.DataSource = db.Klanten.Where(x => x.Naam.Contains(textBox11.Text)).ToList();
         }
 
         // huisarts of klant toevoegen
@@ -251,6 +251,12 @@ namespace GEZOND
             Klanten.DataSource = db.Klanten.ToList();
             Huisartsen.DataSource = db.Huisartsen.ToList();
             Medicatie.DataSource = db.Medicatie.ToList();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Huisartsen.DataSource = db.Huisartsen.Where(x => x.Naam.Contains(textBox11.Text)).ToList();
+
         }
     }
 }
