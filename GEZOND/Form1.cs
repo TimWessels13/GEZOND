@@ -178,6 +178,8 @@ namespace GEZOND
             if (Klanten.SelectedRows.Count == 1)
             {
                 Klanten k = (Klanten)Klanten.CurrentRow.DataBoundItem;
+                Huisartsen.DataSource = db.Huisartsen.ToList();
+                Medicatie.DataSource = db.Medicatie.ToList();
             }
         }
 
@@ -187,6 +189,8 @@ namespace GEZOND
             if (Huisartsen.SelectedRows.Count == 1)
             {
                 Huisartsen h = (Huisartsen)Huisartsen.CurrentRow.DataBoundItem;
+                Klanten.DataSource = db.Klanten.ToList();
+                Medicatie.DataSource = db.Medicatie.ToList();
             }
         }
 
