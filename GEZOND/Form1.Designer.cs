@@ -181,6 +181,7 @@
             // Klanten
             // 
             this.Klanten.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Klanten.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Klanten.Location = new System.Drawing.Point(12, 13);
             this.Klanten.Name = "Klanten";
             this.Klanten.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -191,6 +192,7 @@
             // Huisartsen
             // 
             this.Huisartsen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Huisartsen.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Huisartsen.Location = new System.Drawing.Point(12, 281);
             this.Huisartsen.Name = "Huisartsen";
             this.Huisartsen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -321,6 +323,7 @@
             // Medicatie
             // 
             this.Medicatie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Medicatie.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Medicatie.Location = new System.Drawing.Point(917, 12);
             this.Medicatie.Name = "Medicatie";
             this.Medicatie.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
