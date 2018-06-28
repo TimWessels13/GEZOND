@@ -79,6 +79,10 @@
     <Compile Include="Migrations\201806271203383_hello.Designer.cs">
       <DependentUpon>201806271203383_hello.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806280842139_beter.cs" />
+    <Compile Include="Migrations\201806280842139_beter.Designer.cs">
+      <DependentUpon>201806280842139_beter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806271203383_hello.resx">
       <DependentUpon>201806271203383_hello.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806280842139_beter.resx">
+      <DependentUpon>201806280842139_beter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
