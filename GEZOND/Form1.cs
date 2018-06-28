@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,8 @@ namespace GEZOND
     public partial class Form1 : Form
     {
         Database db = new Database();
+        private PrintPreviewDialog printPreviewDialog1 = new PrintPreviewDialog();
+        private PrintDocument printDocument1 = new PrintDocument();
 
         public Form1()
         {
@@ -65,7 +68,14 @@ namespace GEZOND
         // stickerlabels printen
         private void button2_Click(object sender, EventArgs e)
         {
+            foreach (DataGridViewRow row in Klanten.SelectedRows)
+                Klant.Items.Add("Naam: " + row.Cells[1].Value.ToString() +
+                        ", Adres: " + row.Cells[2].Value.ToString() +
+                        ", Postcode: " + row.Cells[3].Value.ToString() +
+                        ", Plaats: " + row.Cells[4].Value.ToString());
 
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
         }
 
         // zoeken
@@ -178,8 +188,8 @@ namespace GEZOND
             if (Klanten.SelectedRows.Count == 1)
             {
                 Klanten k = (Klanten)Klanten.CurrentRow.DataBoundItem;
-                Huisartsen.DataSource = db.Huisartsen.ToList();
-                Medicatie.DataSource = db.Medicatie.ToList();
+                Huisartsen.DataSource = db.Huisartsen.Where(x=> x.Id == k.ArtsId).ToList();
+                Medicatie.DataSource = db.Medicatie.Where(x => x.Id == k.ArtsId).ToList();
             }
         }
 
@@ -189,8 +199,7 @@ namespace GEZOND
             if (Huisartsen.SelectedRows.Count == 1)
             {
                 Huisartsen h = (Huisartsen)Huisartsen.CurrentRow.DataBoundItem;
-                Klanten.DataSource = db.Klanten.ToList();
-                Medicatie.DataSource = db.Medicatie.ToList();
+                Klanten.DataSource = db.Klanten.Where(x => x.ArtsId == h.Id).ToList();
             }
         }
 
