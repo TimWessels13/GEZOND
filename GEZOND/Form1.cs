@@ -78,10 +78,28 @@ namespace GEZOND
             printPreviewDialog1.ShowDialog();
         }
 
+        public void PrintImage(object o, PrintPageEventArgs e)
+        {
+            float x = 10f;
+            float y = 10f;
+            Font drawFont = new Font("Arial", 12);
+            SolidBrush drawBrush = new SolidBrush(Color.Black);
+            PointF drawPoint = new PointF(x, y);
+
+            foreach (string item in Klant.Items)
+            {
+                e.Graphics.DrawString(item, drawFont, drawBrush, drawPoint);
+                y += 20f;
+                drawPoint = new PointF(x, y);
+            }
+
+        }
+
         // zoeken
         private void button4_Click(object sender, EventArgs e)
         {
             Klanten.DataSource = db.Klanten.Where(x => x.Naam.Contains(textBox11.Text)).ToList();
+            textBox11.Text = "";
         }
 
         // huisarts of klant toevoegen

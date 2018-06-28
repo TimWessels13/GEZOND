@@ -208,7 +208,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 33);
             this.button4.TabIndex = 17;
-            this.button4.Text = "Zoeken";
+            this.button4.Text = "Klant";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -488,7 +488,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(100, 33);
             this.button10.TabIndex = 58;
-            this.button10.Text = "Arts zoeken";
+            this.button10.Text = "Arts";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
